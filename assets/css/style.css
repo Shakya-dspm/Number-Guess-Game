@@ -123,7 +123,7 @@ button:disabled {
     opacity: 0.62;
 }
 
-.bottom {
+.buttom {
     flex: 0 0 auto;
     background: var(--blue-700);
     color: #fff;
