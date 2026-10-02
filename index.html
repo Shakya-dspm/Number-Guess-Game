@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Guess Game</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    
+    <div class="game-card">
+        <div class="game-icon" aria-hidden="true"></div>
+        <h1 id="game-title">Number Guessing Game</h1>
+        <p class="instructions">I'm thinking of a number between 1 and 100. Can you guess it?</p>
+
+        <div id="guess-form">
+            <label for="guess-input">Your guess</label>
+            <input type="number" placeholder="e.g. 42" min="1" max="100">
+            <button class="button" id="guess-button" type="submit">Guess</button>
+        </div>
+        
+        <p class="feedback" id="feedback">
+            Make a guess to get started.
+        </p>
+        <div class="game-footer">
+            <p class="attempt-count" id="attempt-count">Attempts: 0</p>
+            <button class="button-secondary" id="play-again" type="button">
+                Play Again
+            </button>
+        </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
